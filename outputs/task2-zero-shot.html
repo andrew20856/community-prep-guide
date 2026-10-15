@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f3ed">
+	<meta name="description" content="A practical household disaster-preparedness guide with a saved checklist, emergency kit basics, and evacuation reminders.">
+	<title>Ready Together | Community Preparedness Guide</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to guide</a>
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Ready Together home">
+			<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 15.2 16 6l11 9.2v11.1h-8v-7.1h-6v7.1H5V15.2Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11.4v5.1m-2.55-2.55h5.1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+			<span>Ready <b>Together</b></span>
+		</a>
+		<nav aria-label="Main navigation">
+			<a href="#checklist">My checklist</a>
+			<a href="#kit">Emergency kit</a>
+			<a class="nav-plan" href="#family-plan">Family plan <span aria-hidden="true">↗</span></a>
+		</nav>
+	</header>
+
+	<main id="main">
+		<section class="hero page-width" id="top" aria-labelledby="page-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="status-dot"></span> A little preparation goes a long way</p>
+				<h1 id="page-title">Ready starts<br>at <em>home.</em></h1>
+				<p class="hero-intro">Make a simple plan, gather what matters, and help everyone in your household feel more prepared.</p>
+				<a class="primary-link" href="#checklist">Start your checklist <span aria-hidden="true">↓</span></a>
+				<div class="hero-facts" aria-label="Preparation basics">
+					<span><b>01</b> Make a plan</span><i></i><span><b>02</b> Pack essentials</span><i></i><span><b>03</b> Stay informed</span>
+				</div>
+			</div>
+			<figure class="hero-image">
+				<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="A road winding through a red-rock desert landscape">
+				<figcaption><span class="image-caption-icon" aria-hidden="true">⌂</span><span><b>Prepared, not worried.</b><br>Small steps make a difference.</span></figcaption>
+				<span class="image-index" aria-hidden="true">YOUR HOUSEHOLD · YOUR PLAN</span>
+			</figure>
+		</section>
+
+		<section class="checklist-section" id="checklist" aria-labelledby="checklist-title">
+			<div class="page-width">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow section-kicker">Your next steps</p>
+						<h2 id="checklist-title">A plan you can build on</h2>
+						<p class="section-description">Check things off as you go. Your progress stays saved on this device.</p>
+					</div>
+					<div class="progress-widget" aria-label="Checklist progress">
+						<div class="progress-label"><span><strong id="progress-count">0 of 9</strong> complete</span><button id="reset-checklist" type="button" class="text-button">Reset</button></div>
+						<div class="progress-track" role="progressbar" aria-label="Preparedness checklist progress" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><span id="progress-fill"></span></div>
+					</div>
+				</div>
+
+				<div class="checklist-grid">
+					<article class="checklist-group">
+						<div class="group-heading"><span class="group-number">01</span><div><h3>Make a household plan</h3><p>Agree on how you will reconnect.</p></div></div>
+						<label class="check-row"><input type="checkbox" data-task="contacts"><span class="custom-check" aria-hidden="true"></span><span>Write down important contacts</span></label>
+						<label class="check-row"><input type="checkbox" data-task="meeting"><span class="custom-check" aria-hidden="true"></span><span>Choose a family meeting place</span></label>
+						<label class="check-row"><input type="checkbox" data-task="routes"><span class="custom-check" aria-hidden="true"></span><span>Know two ways out of your area</span></label>
+					</article>
+
+					<article class="checklist-group" id="kit">
+						<div class="group-heading"><span class="group-number group-number-orange">02</span><div><h3>Gather essential supplies</h3><p>Aim for several days of essentials.</p></div></div>
+						<label class="check-row"><input type="checkbox" data-task="water"><span class="custom-check" aria-hidden="true"></span><span>Drinking water and easy-to-eat food</span></label>
+						<label class="check-row"><input type="checkbox" data-task="medicine"><span class="custom-check" aria-hidden="true"></span><span>Medicines, first aid, and hygiene items</span></label>
+						<label class="check-row"><input type="checkbox" data-task="light"><span class="custom-check" aria-hidden="true"></span><span>Flashlight, batteries, and power bank</span></label>
+					</article>
+
+					<article class="checklist-group">
+						<div class="group-heading"><span class="group-number group-number-yellow">03</span><div><h3>Prepare your home</h3><p>Reduce risk before an emergency.</p></div></div>
+						<label class="check-row"><input type="checkbox" data-task="alerts"><span class="custom-check" aria-hidden="true"></span><span>Sign up for local emergency alerts</span></label>
+						<label class="check-row"><input type="checkbox" data-task="documents"><span class="custom-check" aria-hidden="true"></span><span>Keep key documents in a safe place</span></label>
+						<label class="check-row"><input type="checkbox" data-task="shutoffs"><span class="custom-check" aria-hidden="true"></span><span>Learn how to shut off utilities</span></label>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="preparedness-row page-width" aria-label="Evacuation guidance and household plan">
+			<article class="evacuation-panel">
+				<div class="evacuation-topline"><span class="alert-symbol" aria-hidden="true">!</span><span class="eyebrow">Know before you go</span></div>
+				<h2>When it is time to leave,<br><em>leave early.</em></h2>
+				<p>Follow official evacuation instructions. Take your go-bag, prescriptions, essential documents, and pets. Never wait for conditions to become dangerous.</p>
+				<label class="hazard-label" for="hazard-select">Prepare for</label>
+				<select id="hazard-select" aria-describedby="hazard-advice">
+					<option value="general">Any emergency</option>
+					<option value="flood">Flooding</option>
+					<option value="wildfire">Wildfire</option>
+					<option value="storm">Severe storm</option>
+					<option value="earthquake">Earthquake</option>
+				</select>
+				<p class="hazard-advice" id="hazard-advice" aria-live="polite">Keep shoes, keys, and a flashlight where you can reach them quickly.</p>
+				<a href="https://www.ready.gov/evacuation" target="_blank" rel="noreferrer">More evacuation guidance <span aria-hidden="true">↗</span></a>
+			</article>
+
+			<article class="family-panel" id="family-plan">
+				<div class="family-heading"><div><p class="eyebrow">Make it yours</p><h2>Your household details</h2></div><span class="family-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="10" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 26v-2.2a7.5 7.5 0 0 1 15 0V26h-15Z" stroke="currentColor" stroke-width="1.8"/><path d="M6 14v5m20-5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div>
+				<p class="family-intro">Choose a place to meet if you cannot get home. Add an out-of-area contact everyone can check in with.</p>
+				<label class="field-label" for="meeting-place">Meeting place outside your neighborhood</label>
+				<input class="plan-input" id="meeting-place" type="text" maxlength="80" placeholder="e.g. the library on Oak Street" autocomplete="off">
+				<label class="field-label" for="contact-name">Out-of-area contact</label>
+				<input class="plan-input" id="contact-name" type="text" maxlength="80" placeholder="Name and phone number" autocomplete="off">
+				<p class="save-note" id="save-note" aria-live="polite"><span aria-hidden="true">✓</span> Saved on this device</p>
+			</article>
+		</section>
+
+		<section class="bottom-reminder page-width" aria-label="Preparation reminder">
+			<span class="reminder-mark" aria-hidden="true">↗</span>
+			<p><strong>Stay connected to trusted local updates.</strong> Keep your phone charged and know where your local emergency information comes from.</p>
+			<a href="https://www.ready.gov/" target="_blank" rel="noreferrer">Ready.gov <span aria-hidden="true">↗</span></a>
+		</section>
+	</main>
+
+	<footer class="site-footer"><span>Ready Together <span aria-hidden="true">·</span> Community Preparedness Guide</span><span>Follow local emergency services for instructions specific to your area.</span></footer>
+</body>
+</html>
+

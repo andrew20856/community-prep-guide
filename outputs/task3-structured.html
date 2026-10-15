@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f3f1e8">
+	<meta name="description" content="A practical, offline-friendly typhoon and flood preparedness guide for households in the Philippines.">
+	<title>Handa Tayo | Philippine Household Storm Guide</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to guide</a>
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Handa Tayo home"><span class="brand-symbol" aria-hidden="true">H</span><span>HANDA <b>TAYO</b></span></a>
+		<nav class="site-nav" aria-label="Main navigation">
+			<a href="#kit">Go-bag</a>
+			<a href="#steps">Safety steps</a>
+			<a href="#family-plan">Family plan</a>
+		</nav>
+	</header>
+
+	<main id="main">
+		<section class="hero page-width" id="top" aria-labelledby="page-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Para sa pamilyang Pilipino <span class="eyebrow-translation">A guide for Filipino households</span></p>
+				<h1 id="page-title">Handa bago<br><span>ang bagyo.</span></h1>
+				<p class="hero-intro">Typhoon and flood preparation, made practical. Get your household ready before heavy rain reaches your community.</p>
+				<a class="primary-link" href="#kit">Check your go-bag <span aria-hidden="true">↓</span></a>
+			</div>
+			<aside class="hero-notice" aria-label="Important local reminder">
+				<div class="notice-label"><span aria-hidden="true">!</span> Bago tumama ang bagyo</div>
+				<h2>Know your local plan.</h2>
+				<p>Save your barangay or city hotline and know which evacuation center serves your neighborhood.</p>
+				<div class="notice-sources"><span>PAGASA bulletins</span><span>Barangay / LGU advisories</span><span>Local radio updates</span></div>
+				<p class="notice-footnote">This guide is not a live alert service. Follow official local instructions.</p>
+			</aside>
+		</section>
+
+		<section class="kit-section" id="kit" aria-labelledby="kit-title">
+			<div class="page-width">
+				<div class="section-heading">
+					<div>
+					<p class="eyebrow section-kicker">Ihanda ang go-bag</p>
+					<h2 id="kit-title">Pack for at least 3 days</h2>
+					<p class="section-description">Check each item as you gather it. Progress is saved on this device.</p>
+				</div>
+				<div class="progress-widget">
+					<div class="progress-label"><span><strong id="progress-count">0 of 10</strong> items ready</span><button id="reset-checklist" type="button" class="text-button">Clear checks</button></div>
+					<div class="progress-track" role="progressbar" aria-label="Emergency kit progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><span id="progress-fill"></span></div>
+				</div>
+			</div>
+			<div class="kit-list page-width" role="group" aria-label="Emergency go-bag checklist">
+				<label class="kit-item"><input type="checkbox" data-item="water"><span class="item-copy"><strong>Drinking water</strong><small>Enough for each person for 3 days</small></span><span class="item-number">01</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="food"><span class="item-copy"><strong>Ready-to-eat food</strong><small>Canned or sealed food and a can opener</small></span><span class="item-number">02</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="light"><span class="item-copy"><strong>Flashlight and batteries</strong><small>Keep a light within easy reach</small></span><span class="item-number">03</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="radio"><span class="item-copy"><strong>Battery or hand-crank radio</strong><small>For updates during power or signal loss</small></span><span class="item-number">04</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="power"><span class="item-copy"><strong>Charged power bank</strong><small>Bring charging cables for your phones</small></span><span class="item-number">05</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="firstaid"><span class="item-copy"><strong>First aid and medicines</strong><small>Include prescriptions and maintenance medicine</small></span><span class="item-number">06</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="documents"><span class="item-copy"><strong>Protected documents and cash</strong><small>IDs, records, and small bills in a sealed pouch</small></span><span class="item-number">07</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="clothes"><span class="item-copy"><strong>Rain gear and dry clothes</strong><small>Pack a change of clothes for each person</small></span><span class="item-number">08</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="hygiene"><span class="item-copy"><strong>Hygiene and sanitation supplies</strong><small>Include menstrual and infant-care needs</small></span><span class="item-number">09</span></label>
+				<label class="kit-item"><input type="checkbox" data-item="whistle"><span class="item-copy"><strong>Whistle and contact list</strong><small>Write important numbers on paper</small></span><span class="item-number">10</span></label>
+			</div>
+			<p class="kit-note page-width">Add baby, older-adult, disability, and pet essentials for your household.</p>
+		</section>
+
+		<section class="steps-section" id="steps" aria-labelledby="steps-title">
+			<div class="page-width">
+				<div class="steps-heading"><div><p class="eyebrow section-kicker">Bagyo at baha</p><h2 id="steps-title">What to do, when it matters</h2></div><p>Keep these steps simple. Local evacuation orders always come first.</p></div>
+				<div class="steps-grid">
+					<article class="step-block"><span class="step-tag">01 / BEFORE</span><h3>Get ready early</h3><ul><li>Follow PAGASA forecasts and official barangay or LGU advisories.</li><li>Agree on a meeting place and how to contact each other.</li><li>Move valuables and documents above expected flood level.</li><li>Charge phones, lights, and power banks; refill safe water containers.</li></ul></article>
+					<article class="step-block step-block-alert"><span class="step-tag">02 / WHEN TOLD TO EVACUATE</span><h3>Leave while routes are safe</h3><ul><li>Go to your designated evacuation center or higher ground.</li><li>Bring your go-bag, medicines, documents, and essential mobility aids.</li><li>Bring children, older adults, and pets; do not wait for floodwater.</li><li>Switch off electricity only if it is safe and you have been instructed.</li></ul></article>
+					<article class="step-block"><span class="step-tag">03 / DURING FLOODING</span><h3>Stay out of floodwater</h3><ul><li>Never walk, swim, or drive through floodwater.</li><li>Keep away from downed wires, drains, and fast-moving water.</li><li>If trapped, move to higher ground and call for help.</li><li>Drink safe or boiled water; follow local health guidance.</li></ul></article>
+				</div>
+			</div>
+		</section>
+
+		<section class="family-section page-width" id="family-plan" aria-labelledby="family-title">
+			<div class="family-copy"><p class="eyebrow section-kicker">I-save ang mahahalagang detalye</p><h2 id="family-title">Your household plan</h2><p>Write down local details now. They stay saved in this browser on this device.</p><p class="privacy-note">Do not enter sensitive information. This guide does not send or sync your details.</p></div>
+			<form class="family-form" id="family-form" autocomplete="on">
+				<div class="field-group"><label for="barangay-contact">Barangay / city emergency contact</label><input id="barangay-contact" name="barangay-contact" type="text" maxlength="100" placeholder="Office name and phone number"></div>
+				<div class="field-group"><label for="evacuation-center">Your evacuation center</label><input id="evacuation-center" name="evacuation-center" type="text" maxlength="100" placeholder="Center name or location"></div>
+				<div class="field-group"><label for="family-contact">Out-of-area family contact</label><input id="family-contact" name="family-contact" type="text" maxlength="100" placeholder="Name and phone number"></div>
+				<p class="save-status" id="save-status" aria-live="polite">Details are stored only on this device.</p>
+			</form>
+		</section>
+
+		<section class="reminder-band" aria-labelledby="reminder-title">
+			<div class="page-width reminder-content"><span class="reminder-icon" aria-hidden="true">!</span><div><h2 id="reminder-title">Use trusted local updates.</h2><p>Check PAGASA weather bulletins and follow instructions from your barangay, city or municipal DRRMO, and NDRRMC. This page does not provide live warnings.</p></div><a class="emergency-number" href="tel:911"><span>PHILIPPINES EMERGENCY</span><strong>911</strong><small>Confirm local response options</small></a></div>
+		</section>
+	</main>
+
+	<footer class="site-footer"><span>HANDA TAYO <span aria-hidden="true">·</span> Philippine Household Storm Guide</span><span>In an emergency, follow your local authorities and move to safety.</span></footer>
+</body>
+</html>
